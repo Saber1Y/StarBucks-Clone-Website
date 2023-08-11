@@ -6,50 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarBucks Clone</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
     <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="nav-bar">
-      <div class="nav-bar-container">
-        <a href="index.html">
-          <img src="/images/logo.png" alt="StarBucks Logo" width="60px" />
+    <nav class="flex items-center justify-between p-4 bg-white shadow-md">
+      <div class="flex items-center space-x-6">
+        <a href="#">
+          <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
         </a>
 
-        <ul class="navbar-left">
-          <a href="#menu"><li>MENU</li></a>
-          <a href="#Rewards"><li>REWARDS</li></a>
-          <a href="#Gift Cards"><li>GIFT CARDS</li></a>
-        </ul>
-        <ul class="navbar-right" style="list-style: none">
+        <ul class="hidden md:flex space-x-6">
           <li>
-            <article href="#">
-              <img
-                src="/StarBucks Clone Img's/marker.svg"
-                width="30px"
-                height="21vh"
-              />
-              <a>Find a Store</a>
-            </article>
-          </li>
-          <li>
-            <button class="navbar-btn">Sign in</button>
-            <button
-              class="navbar-btn"
-              style="background-color: #000; color: #fff"
+            <a
+              href="#menu"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >MENU</a
             >
-              Join now
-            </button>
+          </li>
+          <li>
+            <a
+              href="#Rewards"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >REWARDS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Gift Cards"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >GIFT CARDS</a
+            >
           </li>
         </ul>
-        <a href="/" class="Menu-icon" onclick="menuClick()">
-          <i class="bx bx-menu-alt-right"></i>
-        </a>
+      </div>
+
+      <div class="block md:hidden">
+        <button id="hamburger" class="flex items-center p-2">
+          <svg
+            class="w-6 h-6 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-9 ml-auto">
+        <div
+          class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+        >
+          <img
+            src="/StarBucks Clone Img's/marker.svg"
+            width="20"
+            height="20"
+            alt="Location Icon"
+          />
+          <a href="#">Find a Store</a>
+        </div>
+
+        <div class="flex space-x-4">
+          <button
+            class="border border-black text-darkBlack bg-opacity-20 rounded-full px-4 py-2"
+          >
+            Sign In
+          </button>
+
+          <button class="bg-black text-white rounded-full px-4 py-2">
+            Join Now
+          </button>
+        </div>
       </div>
     </nav>
+
     <section class="content">
       <div class="text-Contact">
         <h2 style="font-size: 3rem">
@@ -71,18 +114,21 @@
         <img src="/images/img1.png" width="400px" />
       </div>
     </section>
-    <section class="img-box">
-      <div class="img--box-6">
-        <img src="/StarBucks Clone Img's/137-83790.jpg" alt="ice Tea" />
-      </div>
-      <div class="main--txt">
-        <h2>Macadamia Just dropped</h2>
-        <p style="font-size: 24px">
-          introducing the White Chocolate Macadamia <br />
-          cream cold Brew with toasted cookie <br />
-          crumbles
-        </p>
-        <button class="order--btn">Order now</button>
+    <section class="hero-container">
+      <div class="hero-img"></div>
+      <div class="hero-content">
+        <div class="main--txt">
+          <h2>
+            Cool off with 50%<br />
+            off
+          </h2>
+          <p style="font-size: 24px">
+            Hooray! WinsDays are all day! Starbucks®<br />
+            Rewards members, enjoy 50% off a cold<br />
+            drink on Wednesdays.*
+          </p>
+          <button class="order--btn">Join for free</button>
+        </div>
       </div>
     </section>
 
@@ -182,7 +228,7 @@
       </p>
     </section>
 
-    <section class="div--footer">
+    <footer class="div--footer">
       <div class="footer--txt-1">
         <h3 class="first--txt">About Us</h3>
         <p>Our Company</p>
@@ -221,7 +267,7 @@
         <p>order and Pick up options</p>
         <p>Expore and Find Coffee for Home</p>
       </div>
-    </section>
+    </footer>
     <footer>
       <a href="#" class="fa fa-spotify"></a>
       <a href="#" class="fa fa-facebook"></a>
