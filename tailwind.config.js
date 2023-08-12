@@ -16,6 +16,8 @@ module.exports = {
         lightGreen: "hsla(162, 100%, 20%, 1)",
         lightPink: "hsla(340, 78%, 70%, 1)",
         lightShadeAuqua: "hsla(167, 41%, 84%, 1)",
+        lavender: 'hsla(243, 56%, 75%, 1)',
+        lightYellow: 'hsla(68, 100%, 75%, 1)',
       }
     },
   },
