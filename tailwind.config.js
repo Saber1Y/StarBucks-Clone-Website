@@ -14,6 +14,7 @@ module.exports = {
         darkBlack: "hsla(0, 0%, 0%, 1)",
         lightGray: "hsla(0, 0%, 50%, 1)",
         lightGreen: "hsla(162, 100%, 20%, 1)",
+        lightPink: "hsla(340, 78%, 70%, 1)",
       }
     },
   },
