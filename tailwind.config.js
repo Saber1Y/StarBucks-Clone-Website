@@ -18,6 +18,7 @@ module.exports = {
         lightShadeAuqua: "hsla(167, 41%, 84%, 1)",
         lavender: 'hsla(243, 56%, 75%, 1)',
         lightYellow: 'hsla(68, 100%, 75%, 1)',
+        lightSupgrey: 'hsla(0, 0%, 0%, 0.58)',
       }
     },
   },
