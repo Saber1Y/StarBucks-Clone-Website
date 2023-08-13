@@ -230,13 +230,16 @@
       </a>
     </p>
 
-    <footer class="bg-white py-6 my-10 shadow-top-bottom">
+    <footer class="bg-white py-6 my-10 shadow-top-bottom md:flex flex-col">
       <div class="container mx-auto">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-items-start"
         >
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">About Us</h3>
+            <h3 class="text-xl font-semibold mb-2">
+              About Us
+              <i class="fas fa-chevron-down ml-2 hidden md:hidden"></i>
+            </h3>
             <ul class="text-base text-lightSupgrey space-y-5">
               <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
               <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
@@ -323,64 +326,88 @@
     </footer>
 
     <div class="flex space-x-4 mx-6 ml-5">
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-spotify text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-spotify text-xl"></i>
+        </div>
       </a>
 
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-facebook text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-facebook text-xl"></i>
+        </div>
       </a>
 
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-pinterest text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-pinterest text-xl"></i>
+        </div>
       </a>
 
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-instagram text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-instagram text-xl"></i>
+        </div>
       </a>
 
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-youtube text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-youtube text-xl"></i>
+        </div>
       </a>
 
-      <a
-        href="#"
-        class="flex items-center justify-center bg-black text-white rounded-full w-10 h-10"
-      >
-        <i class="fab fa-twitter text-xl"></i>
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-twitter text-xl"></i>
+        </div>
       </a>
     </div>
     <div
-      class="flex items-center text-base text-darkBlack space-x-4 mx-6 my-4 break-words lg:break-normal hover:underline-offset-4 cursor-pointer"
+      class="flex flex-col space-y-3 text-base text-darkBlack space-x-2 mx-3 my-4 break-words lg:break-normal hover:underline-offset-4 cursor-pointer md:flex-row"
     >
-      <a href="#" class="hover:underline">Privacy Notice</a>
-      <span>|</span>
+      <a href="#" class="hover:underline ml-2 md:mt-3">Privacy Notice</a>
+      <span class="hidden md:block">|</span>
       <a href="#" class="hover:underline">Terms of Use</a>
-      <span>|</span>
+      <span class="hidden md:block">|</span>
       <a href="#" class="hover:underline"
         >Do Not Share My Personal Information</a
       >
-      <span>|</span>
+      <span class="hidden md:block">|</span>
       <a href="#" class="hover:underline">CA Supply Chain Act</a>
-      <span>|</span>
+      <span class="hidden md:block">|</span>
       <a href="#" class="hover:underline">Cookie Preferences</a>
     </div>
-    <div class="flex items-center mx-6">
+    <div class="flex items-center mx-6 mt-3">
       © 2023 Starbucks Coffee Company. All rights reserved.
     </div>
 
