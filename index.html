@@ -26,8 +26,10 @@
     ></script>
   </head>
   <body>
-    <nav class="flex items-center justify-between p-4 bg-white shadow-md">
-      <div class="flex items-center space-x-6">
+    <nav
+      class="relative flex items-center justify-between p-4 bg-white shadow-md"
+    >
+      <div class="flex justify-between items-center space-x-6">
         <a href="#">
           <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
         </a>
@@ -57,23 +59,49 @@
         </ul>
       </div>
 
-      <div class="block md:hidden">
-        <button id="hamburger" class="flex items-center p-2">
-          <svg
-            class="w-6 h-6 text-black"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none ml-auto"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md transition-transform ease-in-out duration-300 transform -translate-x-full md:translate-x-0 w-1/2"
+          style="height: 100vh"
+        >
+          <a href="#">Menu</a>
+          <a href="#">Rewards</a>
+          <a href="#">Gift Cards</a>
+          <div class="shadow-md my-3 p-2 flex items-center">
+            <button
+              class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+            >
+              Sign In
+            </button>
+
+            <button
+              class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+            >
+              Join Now
+            </button>
+            <div
+              class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+            >
+              <img
+                src="/StarBucks Clone Img's/marker.svg"
+                width="20"
+                height="20"
+                class="hover:text-lightGreen text-darkBlack"
+                alt="Location Icon"
+              />
+              <a href="#">Find a Store</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hidden md:flex items-center space-x-9 ml-auto">
@@ -126,13 +154,14 @@
           Order Now
         </a>
       </div>
-      <div class="hero-image">
-        <img
-          src="/StarBucks Clone Img's/lemonade DragonFruit.jpg"
-          alt="Coffee Blend"
-          width="720"
-          height="652"
-        />
+      <div class="hero-image bg-lightPink flex items-center justify-center">
+        <div class="w-720 h-652">
+          <img
+            src="/StarBucks Clone Img's/lemonade DragonFruit.jpg"
+            alt="Coffee Blend"
+            class="object-cover w-720 h-652 inset-0"
+          />
+        </div>
       </div>
     </section>
 
@@ -183,9 +212,8 @@
       <div class="hero-image">
         <img
           src="/StarBucks Clone Img's/Caramel Frappuccino.jpg"
+          class="block object-contain max-w-full max-h-full"
           alt="Coffee Blend"
-          width="720"
-          height="652"
         />
       </div>
     </section>
@@ -230,36 +258,53 @@
       </a>
     </p>
 
-    <footer class="bg-white py-6 my-10 shadow-top-bottom md:flex flex-col">
+    <footer
+      class="bg-white py-6 my-10 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
+    >
       <div class="container mx-auto">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-items-start"
+          class="grid grid-cols-1 lg:grid-cols-5 lg:gap-5 lg:p-6 lg:mb-8 justify-items-start"
         >
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">
-              About Us
-              <i class="fas fa-chevron-down ml-2 hidden md:hidden"></i>
-            </h3>
-            <ul class="text-base text-lightSupgrey space-y-5">
-              <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
-              <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
-              <li class="hover:text-darkBlack cursor-pointer">
-                Stories and News
-              </li>
-              <li class="hover:text-darkBlack cursor-pointer">
-                Starbucks Archive
-              </li>
-              <li class="hover:text-darkBlack cursor-pointer">
-                Investor Relations
-              </li>
-              <li class="hover:text-darkBlack cursor-pointer">
-                Customer Service
-              </li>
-            </ul>
+            <div class="collapsible-section">
+              <h3
+                class="text-xl font-semibold lg:mb-9 inline-flex items-center"
+              >
+                About Us
+                <img
+                  src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                  class="ml-6 w-8 h-8 lg:hidden"
+                />
+              </h3>
+              <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
+                <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
+                <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
+                <li class="hover:text-darkBlack cursor-pointer">
+                  Stories and News
+                </li>
+                <li class="hover:text-darkBlack cursor-pointer">
+                  Starbucks Archive
+                </li>
+                <li class="hover:text-darkBlack cursor-pointer">
+                  Investor Relations
+                </li>
+                <li class="hover:text-darkBlack cursor-pointer">
+                  Customer Service
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">Careers</h3>
-            <ul class="text-base text-lightSupgrey space-y-5">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Careers
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden"
+              />
+            </h3>
+            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
               <li class="hover:text-darkBlack cursor-pointer">
                 Culture and Values
               </li>
@@ -279,8 +324,16 @@
             </ul>
           </div>
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">Social Impacts</h3>
-            <ul class="text-base text-lightSupgrey space-y-5">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Social Impacts
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden"
+              />
+            </h3>
+            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
               <li class="hover:text-darkBlack cursor-pointer">People</li>
               <li class="hover:text-darkBlack cursor-pointer">Planet</li>
               <li class="hover:text-darkBlack cursor-pointer">
@@ -289,8 +342,16 @@
             </ul>
           </div>
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">For Buisness Partners</h3>
-            <ul class="text-base text-lightSupgrey space-y-5 cursor-pointer">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              For Buisness Partners
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden"
+              />
+            </h3>
+            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
               <li class="hover:text-darkBlack cursor-pointer">
                 Landlord Support Center
               </li>
@@ -304,8 +365,16 @@
             </ul>
           </div>
           <div class="mb-6">
-            <h3 class="text-xl font-semibold mb-2">Order and Pickup</h3>
-            <ul class="text-base text-lightSupgrey space-y-5 cursor-pointer">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Order and Pickup
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden"
+              />
+            </h3>
+            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
               <li class="hover:text-darkBlack cursor-pointer">
                 Order on the App
               </li>
