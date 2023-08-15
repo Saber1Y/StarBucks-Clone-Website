@@ -24,6 +24,29 @@
       src="https://kit.fontawesome.com/97d7b43d58.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .CollapsibleContent:not(.hidden) {
+        margin: 35px 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      .CollapsibleContent {
+        max-height: 20rem;
+        overflow: hidden;
+        transition: max-height 3s ease;
+      }
+      .CollapsibleContent.show {
+        max-height: 500px;
+        overflow: auto;
+      }
+      .rotate-up {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -261,38 +284,40 @@
     <footer
       class="bg-white py-6 my-10 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
     >
-      <div class="container mx-auto">
+      <div class="container ml-5">
         <div
-          class="grid grid-cols-1 lg:grid-cols-5 lg:gap-5 lg:p-6 lg:mb-8 justify-items-start"
+          class="grid grid-cols-1 space-y-10 mr-11 lg:grid-cols-5 lg:gap-5 lg:p-6 lg:mb-8 justify-items-start md:pl-1 md:pr-0 pl-0"
         >
-          <div class="mb-6">
-            <div class="collapsible-section">
-              <h3
-                class="text-xl font-semibold lg:mb-9 inline-flex items-center"
-              >
-                About Us
-                <img
-                  src="/StarBucks Clone Img's/chevron-down-solid-24.png"
-                  class="ml-6 w-8 h-8 lg:hidden"
-                />
-              </h3>
-              <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
-                <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
-                <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
-                <li class="hover:text-darkBlack cursor-pointer">
-                  Stories and News
-                </li>
-                <li class="hover:text-darkBlack cursor-pointer">
-                  Starbucks Archive
-                </li>
-                <li class="hover:text-darkBlack cursor-pointer">
-                  Investor Relations
-                </li>
-                <li class="hover:text-darkBlack cursor-pointer">
-                  Customer Service
-                </li>
-              </ul>
+          <div class="lg:mb-6">
+            <div
+              class="flex justify-between items-center w-full md:flex md:justify-between md:items-center"
+            >
+              <h3 class="text-xl font-semibold lg:mb-8">About Us</h3>
+
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-9 w-8 h-8 lg:hidden ClickArrow"
+              />
             </div>
+
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
+              <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Stories and News
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Starbucks Archive
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Investor Relations
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Customer Service
+              </li>
+            </ul>
           </div>
           <div class="mb-6">
             <h3
@@ -301,10 +326,12 @@
               Careers
               <img
                 src="/StarBucks Clone Img's/chevron-down-solid-24.png"
-                class="ml-6 w-8 h-8 lg:hidden"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
               />
             </h3>
-            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
               <li class="hover:text-darkBlack cursor-pointer">
                 Culture and Values
               </li>
@@ -330,10 +357,12 @@
               Social Impacts
               <img
                 src="/StarBucks Clone Img's/chevron-down-solid-24.png"
-                class="ml-6 w-8 h-8 lg:hidden"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
               />
             </h3>
-            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
               <li class="hover:text-darkBlack cursor-pointer">People</li>
               <li class="hover:text-darkBlack cursor-pointer">Planet</li>
               <li class="hover:text-darkBlack cursor-pointer">
@@ -348,10 +377,12 @@
               For Buisness Partners
               <img
                 src="/StarBucks Clone Img's/chevron-down-solid-24.png"
-                class="ml-6 w-8 h-8 lg:hidden"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
               />
             </h3>
-            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
               <li class="hover:text-darkBlack cursor-pointer">
                 Landlord Support Center
               </li>
@@ -371,10 +402,12 @@
               Order and Pickup
               <img
                 src="/StarBucks Clone Img's/chevron-down-solid-24.png"
-                class="ml-6 w-8 h-8 lg:hidden"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
               />
             </h3>
-            <ul class="text-base text-lightSupgrey space-y-5 hidden lg:block">
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
               <li class="hover:text-darkBlack cursor-pointer">
                 Order on the App
               </li>

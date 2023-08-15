@@ -43,10 +43,16 @@
 .open .hamburger-middle {
   display: none;
 }
-
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
+.rotate-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+} */
