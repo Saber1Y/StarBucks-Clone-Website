@@ -19,6 +19,7 @@ module.exports = {
         lavender: 'hsla(243, 56%, 75%, 1)',
         lightYellow: 'hsla(68, 100%, 75%, 1)',
         lightSupgrey: 'hsla(0, 0%, 0%, 0.58)',
+        whiteGray: 'rgb(249,249,249)',
       }
     },
   },

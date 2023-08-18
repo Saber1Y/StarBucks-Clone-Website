@@ -58,7 +58,7 @@
       class="relative flex items-center justify-between p-4 bg-white shadow-md"
     >
       <div class="flex justify-between items-center space-x-6">
-        <a href="#">
+        <a href="#" class="box-border:">
           <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
         </a>
 
@@ -66,10 +66,12 @@
           <li>
             <a
               href="#menu"
-              class="text-black uppercase font-bold hover:text-lightGreen"
-              >MENU</a
+              class="text-black uppercase font-bold hover:text-lightGreen relative border-b-3 border-solid border-lightGreen"
             >
+              MENU
+            </a>
           </li>
+
           <li>
             <a
               href="#Rewards"
@@ -161,20 +163,21 @@
       </div>
     </nav>
 
-    <section id="bottom-nav">
-      <div
-        class="hidden container md:w-full md:bg-black md:bg-opacity-87 md:flex md:space-y-4"
-      >
-        <div
-          class="md:w-full md:min-h-full md:bg-gray-300 md:bg-opacity-87 md:flex md:items-center md:text-base md:font-normal md:space-x-4 md:p-4 md:pl-20 md:relative"
-        >
-          <a href="#">All products</a>
-          <a href="#">Featured</a>
-          <a href="#">Previous Orders</a>
-          <a href="#">FavouritProducts</a>
+    <section class="bg-gray-300 bg-opacity-87">
+      <div id="bottom-nav">
+        <div class="container md:flex md:space-y-4">
+          <div
+            class="md:min-h-full md:w-full md:bg-opacity-87 md:flex md:items-center md:text-base md:font-normal md:space-x-4 md:p-4 md:pl-20 md:relative"
+          >
+            <a href="#">All products</a>
+            <a href="#">Featured</a>
+            <a href="#">Previous Orders</a>
+            <a href="#">Favourite Products</a>
+          </div>
         </div>
       </div>
     </section>
+
     <section id="headers" class="md:flex md:flex-col md:space-y-1">
       <h2 class="md:font-bold md:text-2xl md:p-4 md:pl-20">Menu</h2>
       <h2 class="md:font-bold md:text-xl md:p-4 md:pl-20">Drinks</h2>
@@ -182,7 +185,7 @@
     <hr />
     <section
       id="drinks"
-      class="md:flex space-x-1 md:flex-row md:align-center md:p-4 md:ml-0"
+      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0"
     >
       <div
         id="drinksImagesColumn1"
@@ -279,18 +282,17 @@
       <hr />
     </section>
     <div
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl"
+      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
     >
       <h2 class="md:font-bold md:font-700">Food</h2>
-      <hr />
     </div>
+    <hr class="mt-4 bg-black" />
     <section
       id="Food"
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-0"
+      class="md:flex md:flex-row md:gap-5 md:align-center md:p-4 md:mr-0"
     >
-      <hr />
       <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 md:w-1/2"
+        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4"
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
@@ -351,18 +353,16 @@
     </section>
 
     <div
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl"
+      class="md:flex md:flex-row md:align-center md:p-4 md:py-1 md:ml-16 md:text-2xl"
     >
       <h2 class="md:font-bold md:font-700">At Home Coffee</h2>
     </div>
     <hr class="mt-4 bg-black" />
     <section
       id="coffee"
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-0 md:space-y-1"
+      class="md:flex md:flex-row gap-5 md:align-center md:p-4 md:ml-0"
     >
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 md:w-1/2 -mb-5"
-      >
+      <div class="md:flex md:flex-col md:p-10 md:align-center md:ml-4">
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
             class="md:w-14 md:h-14 md:rounded-full"
@@ -374,9 +374,6 @@
           </div>
         </div>
       </div>
-
-      <hr class="md:border-t-2 md:border-gray-300 md:my-10 md:ml-2" />
-
       <div
         class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-2 md:w-1/2"
       >
@@ -392,6 +389,305 @@
         </div>
       </div>
     </section>
+    <div
+      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
+    >
+      <h2 class="md:font-bold md:font-700">Merchandise</h2>
+    </div>
+    <hr class="mt-4 bg-black" />
+    <section
+      id="merchandise"
+      class="md:flex md:flex-row md:gap-5 md:align-center md:p-4 md:ml-0 md:space-y-1"
+    >
+      <hr class="mt-4 bg-black" />
+      <div
+        class="md:flex md:flex-col md:p-10 md:align-center md:ml-4 md:space-y-2"
+      >
+        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
+          <img
+            class="md:w-14 md:h-14 md:rounded-full"
+            src="/StarBucks Clone Img's/COld Cups.jpg"
+            alt=""
+          />
+          <div class="md:font-medium md:text-darkBlack">
+            <div>Cold Cups</div>
+          </div>
+        </div>
+        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
+          <img
+            class="md:w-14 md:h-14 md:rounded-full"
+            src="/StarBucks Clone Img's/Tumblers.jpg"
+            alt=""
+          />
+          <div class="md:font-medium md:text-darkBlack">
+            <div>Mugs</div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-2 md:w-1/2"
+      >
+        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
+          <img
+            class="md:w-14 md:h-14 md:rounded-full"
+            src="/StarBucks Clone Img's/Mugs.jpg"
+            alt=""
+          />
+          <div class="md:font-medium md:text-darkBlack">
+            <div>Tumblers</div>
+          </div>
+        </div>
+        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
+          <img
+            class="md:w-14 md:h-14 md:rounded-full"
+            src="/StarBucks Clone Img's/Others.jpg"
+            alt=""
+          />
+          <div class="md:font-medium md:text-darkBlack">
+            <div>other</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-white py-6 my-10 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
+    >
+      <div class="container ml-5 my-5">
+        <div
+          class="grid grid-cols-1 space-y-10 mr-11 lg:grid-cols-5 lg:gap-5 lg:p-6 lg:mb-8 justify-items-start md:pl-1 md:pr-0 pl-0"
+        >
+          <div class="lg:mb-6 mb-6">
+            <div
+              class="flex justify-between items-center w-full md:flex md:justify-between md:items-center"
+            >
+              <h3 class="text-xl font-semibold lg:mb-8">About Us</h3>
+
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-9 w-8 h-8 lg:hidden ClickArrow"
+              />
+            </div>
+
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">Our Company</li>
+              <li class="hover:text-darkBlack cursor-pointer">Our Coffee</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Stories and News
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Starbucks Archive
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Investor Relations
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Customer Service
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Careers
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
+              />
+            </h3>
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">
+                Culture and Values
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Inclusion, Diversity, and Equity
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                College Achievement Plan
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Alumni Community
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">U.S. Careers</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                International Careers
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Social Impacts
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
+              />
+            </h3>
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">People</li>
+              <li class="hover:text-darkBlack cursor-pointer">Planet</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Environmental and Social Impact Reporting
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              For Buisness Partners
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
+              />
+            </h3>
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">
+                Landlord Support Center
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">Suppliers</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Corporate Gift Card Sales
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Office and Foodservice Coffee
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3
+              class="text-xl font-semibold mb-2 lg:mb-9 inline-flex items-center"
+            >
+              Order and Pickup
+              <img
+                src="/StarBucks Clone Img's/chevron-down-solid-24.png"
+                class="ml-6 w-8 h-8 lg:hidden ClickArrow"
+              />
+            </h3>
+            <ul
+              class="text-base text-lightSupgrey space-y-5 hidden lg:block CollapsibleContent"
+            >
+              <li class="hover:text-darkBlack cursor-pointer">
+                Order on the App
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Order on the Web
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">Delivery</li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Order and Pick Up Options
+              </li>
+              <li class="hover:text-darkBlack cursor-pointer">
+                Explore and Find Coffee for Home
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="flex mx-6 ml-5">
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-spotify text-xl"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-facebook text-xl"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-pinterest text-xl"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-instagram text-xl"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-youtube text-xl"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex items-center justify-center w-12 h-12 relative">
+        <div
+          class="bg-gray-500 opacity-0 hover:opacity-25 rounded-full absolute inset-0 transition-opacity"
+        ></div>
+        <div
+          class="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fab fa-twitter text-xl"></i>
+        </div>
+      </a>
+    </div>
+    <div
+      class="flex flex-col space-y-3 mx-6 ml-5 text-base text-darkBlack my-4 break-words lg:break-normal hover:underline-offset-4 cursor-pointer"
+    >
+      <div class="flex items-center">
+        <a href="#" class="hover:underline">Privacy Notice</a>
+      </div>
+      <div class="flex items-center">
+        <a href="#" class="hover:underline">Terms of Use</a>
+      </div>
+      <div class="flex items-center">
+        <a href="#" class="hover:underline"
+          >Do Not Share My Personal Information</a
+        >
+      </div>
+      <div class="flex items-center">
+        <a href="#" class="hover:underline">CA Supply Chain Act</a>
+      </div>
+      <div class="flex items-center">
+        <a href="#" class="hover:underline">Cookie Preferences</a>
+      </div>
+    </div>
+
+    <div class="flex mx-6 ml-5">
+      <div>© 2023 Starbucks Coffee Company. All rights reserved.</div>
+    </div>
 
     <script src="/js.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
