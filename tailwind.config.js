@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./*.html*"],
   theme: {
+    font: {
+      Samp: 'SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif'
+    },
     screens: {
       sm: "480px",
       md: "768px",
@@ -13,6 +16,7 @@ module.exports = {
       colors: {
         darkBlack: "hsla(0, 0%, 0%, 1)",
         lightGray: "hsla(0, 0%, 50%, 1)",
+        lightSupGray: 'rgba(0,0,0,0.87)',
         lightGreen: "hsla(162, 100%, 20%, 1)",
         lightPink: "hsla(340, 78%, 70%, 1)",
         lightShadeAuqua: "hsla(167, 41%, 84%, 1)",
@@ -20,7 +24,7 @@ module.exports = {
         lightYellow: 'hsla(68, 100%, 75%, 1)',
         lightSupgrey: 'hsla(0, 0%, 0%, 0.58)',
         whiteGray: 'rgb(249,249,249)',
-      }
+      },
     },
   },
   plugins: [],

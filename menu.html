@@ -51,6 +51,24 @@
       .no-scroll {
         overflow: hidden;
       }
+      .cutout-hr {
+        position: relative;
+        height: 1px;
+        background-color: gray;
+        margin-left: 335px;
+        border: none;
+      }
+
+      .cutout-hr::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        right: 0px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: white;
+      }
     </style>
   </head>
   <body>
@@ -66,7 +84,7 @@
           <li>
             <a
               href="#menu"
-              class="text-black uppercase font-bold hover:text-lightGreen relative border-b-3 border-solid border-lightGreen"
+              class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen"
             >
               MENU
             </a>
@@ -178,46 +196,90 @@
       </div>
     </section>
 
-    <section id="headers" class="md:flex md:flex-col md:space-y-1">
-      <h2 class="md:font-bold md:text-2xl md:p-4 md:pl-20">Menu</h2>
-      <h2 class="md:font-bold md:text-xl md:p-4 md:pl-20">Drinks</h2>
+    <section
+      id="lg-section"
+      class="lg:w-1/4 relative top-0 right-0 h-screen p-6"
+    >
+      <div class="hidden md:hidden lg:flex lg:flex-col lg:p-6">
+        <h4 class="font-bold text-xl">Drinks</h4>
+        <ul class="font-normal text-2xl text-lightSupGray">
+          <li>Oleato™</li>
+          <li>Hot Coffees</li>
+          <li>Hot Teas</li>
+          <li>Hot Drinks</li>
+          <li>Frappuccino® Blended Beverages</li>
+          <li>Cold Coffees</li>
+          <li>Iced Teas</li>
+          <li>Cold Drinks</li>
+          <li>Food</li>
+          <li>Hot Breakfast</li>
+          <li>Oatmeal & Yogurt</li>
+          <li>Bakery</li>
+          <li>Lunch</li>
+          <li>Snacks & Sweets</li>
+          <li>At Home Coffee</li>
+          <li>Whole Bean</li>
+          <li>VIA® Instant</li>
+          <li>Merchandise</li>
+          <li>Cold Cups</li>
+          <li>Tumblers</li>
+          <li>Mugs</li>
+          <li>Other</li>
+        </ul>
+      </div>
     </section>
-    <hr />
+
+    <section
+      id="headers"
+      class="md:flex md:flex-col md:space-y-1 lg:flex-col lg:justify-center lg:items-center lg:pl-8"
+    >
+      <h2
+        class="md:font-bold md:text-2xl md:p-4 lg:text-center lg:mr-80 lg:font-samp lg:text-3xl lg:text-darkBlack -mt-12"
+      >
+        Menu
+      </h2>
+      <h2
+        class="md:font-bold md:text-xl md:p-4 lg:text-center lg:mr-80 lg:tex-2xl -mt-12"
+      >
+        Drinks
+      </h2>
+    </section>
+
+    <hr class="cutout-hr" />
     <section
       id="drinks"
-      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0"
+      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
     >
       <div
-        id="drinksImagesColumn1"
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4"
+        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Oleato™</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/chaiTea.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Hot Teas</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/frappuccino Blended Beverages.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div class="md:whitespace-normal">
               Frappuccino® Blended<br />Beverages
             </div>
@@ -225,56 +287,55 @@
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/iced teas.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Iced Teas</div>
           </div>
         </div>
       </div>
       <div
-        id="drinksImagesColumn1"
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4"
+        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Venti Tea.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Hot Coffees</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/hot Drinks.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Hot Drinks</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div class="md:whitespace-normal">Cold Coffees</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/cold Drinks.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Cold Drinks</div>
           </div>
         </div>
@@ -284,43 +345,43 @@
     <div
       class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
     >
-      <h2 class="md:font-bold md:font-700">Food</h2>
+      <h2 class="md:font-bold md:font-700 lg:ml-64">Food</h2>
     </div>
-    <hr class="mt-4 bg-black" />
+    <hr class="cutout-hr" />
     <section
-      id="Food"
-      class="md:flex md:flex-row md:gap-5 md:align-center md:p-4 md:mr-0"
+      id="drinks"
+      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
     >
       <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4"
+        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Hot Breakfast.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Hot Breakfast</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Bakery.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
-            <div>Bakery</div>
+          <div class="md:font-medium md:text-darkBlack text-2xl">
+            <div class="md:whitespace-normal">Bakery</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Snacks & Sweets.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div class="md:whitespace-normal">Snacks & Sweets</div>
           </div>
         </div>
@@ -331,21 +392,21 @@
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/oatmeal & Yogurt.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Oatmeal</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Lunch.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Lunch</div>
           </div>
         </div>
@@ -355,21 +416,21 @@
     <div
       class="md:flex md:flex-row md:align-center md:p-4 md:py-1 md:ml-16 md:text-2xl"
     >
-      <h2 class="md:font-bold md:font-700">At Home Coffee</h2>
+      <h2 class="md:font-bold md:font-700 lg:ml-64">At Home Coffee</h2>
     </div>
-    <hr class="mt-4 bg-black" />
+    <hr class="cutout-hr" />
     <section
       id="coffee"
-      class="md:flex md:flex-row gap-5 md:align-center md:p-4 md:ml-0"
+      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
     >
       <div class="md:flex md:flex-col md:p-10 md:align-center md:ml-4">
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Whole Bean.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Whole Bean</div>
           </div>
         </div>
@@ -379,11 +440,11 @@
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/VIA.jpg"
             alt="Rounded avatar"
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>VIA® Instant</div>
           </div>
         </div>
@@ -392,12 +453,12 @@
     <div
       class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
     >
-      <h2 class="md:font-bold md:font-700">Merchandise</h2>
+      <h2 class="md:font-bold md:font-700 lg:ml-64">Merchandise</h2>
     </div>
-    <hr class="mt-4 bg-black" />
+    <hr class="cutout-hr" />
     <section
       id="merchandise"
-      class="md:flex md:flex-row md:gap-5 md:align-center md:p-4 md:ml-0 md:space-y-1"
+      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-48 lg:gap-x-20"
     >
       <hr class="mt-4 bg-black" />
       <div
@@ -405,21 +466,21 @@
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/COld Cups.jpg"
             alt=""
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Cold Cups</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Tumblers.jpg"
             alt=""
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Mugs</div>
           </div>
         </div>
@@ -430,21 +491,21 @@
       >
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Mugs.jpg"
             alt=""
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>Tumblers</div>
           </div>
         </div>
         <div class="md:flex md:items-center md:space-x-4 md:flex-row">
           <img
-            class="md:w-14 md:h-14 md:rounded-full"
+            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
             src="/StarBucks Clone Img's/Others.jpg"
             alt=""
           />
-          <div class="md:font-medium md:text-darkBlack">
+          <div class="md:font-medium md:text-darkBlack text-2xl">
             <div>other</div>
           </div>
         </div>
