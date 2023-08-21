@@ -13,6 +13,10 @@ module.exports = {
       xxl: "1536px",
      },
     extend: {
+      fontSize: {
+        '28': '28px', 
+        '24': '24px',
+      },
       colors: {
         darkBlack: "hsla(0, 0%, 0%, 1)",
         lightGray: "hsla(0, 0%, 50%, 1)",
@@ -24,6 +28,7 @@ module.exports = {
         lightYellow: 'hsla(68, 100%, 75%, 1)',
         lightSupgrey: 'hsla(0, 0%, 0%, 0.58)',
         whiteGray: 'rgb(249,249,249)',
+        SupGreen: 'rgb(30,57,50)',
       },
     },
   },

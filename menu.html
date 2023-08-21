@@ -181,11 +181,11 @@
       </div>
     </nav>
 
-    <section class="bg-gray-300 bg-opacity-87">
+    <section class="hidden md:block bg-gray-300 bg-opacity-87">
       <div id="bottom-nav">
         <div class="container md:flex md:space-y-4">
           <div
-            class="md:min-h-full md:w-full md:bg-opacity-87 md:flex md:items-center md:text-base md:font-normal md:space-x-4 md:p-4 md:pl-20 md:relative"
+            class="min-h-full w-full bg-opacity-87 flex items-center text-base font-normal space-x-4 p-4 pl-20 relative"
           >
             <a href="#">All products</a>
             <a href="#">Featured</a>
@@ -198,11 +198,11 @@
 
     <section
       id="lg-section"
-      class="lg:w-1/4 relative top-0 right-0 h-screen p-6"
+      class="hidden lg:w-1/4 lg:relative lg:top-0 lg:right-0 lg:h-screen lg:p-6 md:hidden"
     >
-      <div class="hidden md:hidden lg:flex lg:flex-col lg:p-6">
-        <h4 class="font-bold text-xl">Drinks</h4>
-        <ul class="font-normal text-2xl text-lightSupGray">
+      <div class="lg:flex lg:flex-col lg:p-6">
+        <h4 class="lg:font-bold lg:ext-xl">Drinks</h4>
+        <ul class="lg:font-normal lg:text-2xl lg:text-lightSupGray">
           <li>Oleato™</li>
           <li>Hot Coffees</li>
           <li>Hot Teas</li>
@@ -228,288 +228,340 @@
         </ul>
       </div>
     </section>
+    <section id="main">
+      <section
+        id="headers"
+        class="flex flex-col pl-3 p-4 space-y-1 md:flex md:flex-col md:pl-20 md:p-4 md:space-y-1 lg:flex-col lg:justify-center lg:items-center lg:pl-8"
+      >
+        <h2
+          class="text-5xl pl-3 p-4 font-900 text-darkBlack md:font-bold md:text-28 md:p-4 lg:text-center lg:mr-80 lg:font-samp lg:text-3xl lg:text-darkBlack"
+        >
+          Menu
+        </h2>
+        <h2
+          class="text-lg pl-3 p-4 font-300 text-darkBlack md:font-bold md:text-xl md:text-24 lg:text-center lg:mr-80 lg:tex-2xl"
+        >
+          Drinks
+        </h2>
+      </section>
 
-    <section
-      id="headers"
-      class="md:flex md:flex-col md:space-y-1 lg:flex-col lg:justify-center lg:items-center lg:pl-8"
-    >
-      <h2
-        class="md:font-bold md:text-2xl md:p-4 lg:text-center lg:mr-80 lg:font-samp lg:text-3xl lg:text-darkBlack -mt-12"
+      <hr class="md:cutout-hr" />
+      <section
+        id="drinks"
+        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
       >
-        Menu
-      </h2>
-      <h2
-        class="md:font-bold md:text-xl md:p-4 lg:text-center lg:mr-80 lg:tex-2xl -mt-12"
-      >
-        Drinks
-      </h2>
-    </section>
-
-    <hr class="cutout-hr" />
-    <section
-      id="drinks"
-      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
-    >
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
-      >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Oleato™</div>
+        <div
+          class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Oleato™</div>
+            </div>
           </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/chaiTea.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Hot Teas</div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/chaiTea.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Hot Teas</div>
+            </div>
           </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/frappuccino Blended Beverages.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div class="md:whitespace-normal">
-              Frappuccino® Blended<br />Beverages
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/frappuccino Blended Beverages.jpg"
+              alt="Rounded avatar"
+            />
+            <div
+              class="flex items-center space-x-4 flex-row md:font-medium md:text-darkBlack text-2xl"
+            >
+              <div class="md:whitespace-normal">
+                Frappuccino® Blended<br />Beverages
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/iced teas.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Iced Teas</div>
             </div>
           </div>
         </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/iced teas.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Iced Teas</div>
+        <div
+          class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Venti Tea.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Hot Coffees</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/hot Drinks.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Hot Drinks</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div class="md:whitespace-normal">Cold Coffees</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/cold Drinks.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Cold Drinks</div>
+            </div>
           </div>
         </div>
-      </div>
+        <hr class="md:cutout-hr" />
+      </section>
       <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
+        class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
       >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Venti Tea.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Hot Coffees</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/hot Drinks.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Hot Drinks</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/20230221-Starbucks-Oleato-Caffe-Latte_.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div class="md:whitespace-normal">Cold Coffees</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/cold Drinks.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Cold Drinks</div>
-          </div>
-        </div>
+        <h2
+          class="my-8 mx-4 text-2xl font-bold md:font-700 md:font-bold md:font-700 lg:ml-64"
+        >
+          Food
+        </h2>
       </div>
-      <hr />
-    </section>
-    <div
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
-    >
-      <h2 class="md:font-bold md:font-700 lg:ml-64">Food</h2>
-    </div>
-    <hr class="cutout-hr" />
-    <section
-      id="drinks"
-      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
-    >
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-4 lg:space-y-4"
+      <section
+        id="drinks"
+        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
       >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Hot Breakfast.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Hot Breakfast</div>
+        <div
+          class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Hot Breakfast.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Hot Breakfast</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Bakery.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div class="md:whitespace-normal">Bakery</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Snacks & Sweets.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div class="md:whitespace-normal">Snacks & Sweets</div>
+            </div>
           </div>
         </div>
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Bakery.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div class="md:whitespace-normal">Bakery</div>
+
+        <div
+          class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/oatmeal & Yogurt.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Oatmeal</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Lunch.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Lunch</div>
+            </div>
           </div>
         </div>
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Snacks & Sweets.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div class="md:whitespace-normal">Snacks & Sweets</div>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-1 md:w-1/2"
+        class="flex items-center space-x-4 md:flex md:flex-row md:align-center md:p-4 md:py-1 md:ml-16 md:text-2xl"
       >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/oatmeal & Yogurt.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Oatmeal</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Lunch.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Lunch</div>
-          </div>
-        </div>
+        <h2
+          class="my-8 mx-4 text-2xl font-bold md:font-700 md:font-bold md:font-700 lg:ml-64"
+        >
+          At Home Coffee
+        </h2>
       </div>
-    </section>
+      <hr class="md:cutout-hr" />
+      <section
+        id="coffee"
+        class="space-y-4 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
+      >
+        <div class="md:flex md:flex-col md:p-10 md:align-center md:ml-4">
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Whole Bean.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Whole Bean</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-2 md:w-1/2"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/VIA.jpg"
+              alt="Rounded avatar"
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>VIA® Instant</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
+      >
+        <h2
+          class="my-8 mx-4 text-2xl font-bold md:font-700 md:font-bold md:font-700 lg:ml-64"
+        >
+          Merchandise
+        </h2>
+      </div>
+      <hr class="md:cutout-hr" />
+      <section
+        id="merchandise"
+        class="space-y-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-48 lg:gap-x-20"
+      >
+        <hr class="mt-4 bg-black" />
+        <div
+          class="space-y-4 mx-4 md:flex md:flex-col md:p-10 md:align-center md:ml-4 md:space-y-3"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/COld Cups.jpg"
+              alt=""
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Cold Cups</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Tumblers.jpg"
+              alt=""
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Mugs</div>
+            </div>
+          </div>
+        </div>
 
-    <div
-      class="md:flex md:flex-row md:align-center md:p-4 md:py-1 md:ml-16 md:text-2xl"
-    >
-      <h2 class="md:font-bold md:font-700 lg:ml-64">At Home Coffee</h2>
-    </div>
-    <hr class="cutout-hr" />
-    <section
-      id="coffee"
-      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
-    >
-      <div class="md:flex md:flex-col md:p-10 md:align-center md:ml-4">
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Whole Bean.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Whole Bean</div>
+        <div
+          class="space-y-4 mx-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-2 md:w-1/2"
+        >
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Mugs.jpg"
+              alt=""
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>Tumblers</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center space-x-4 flex-row md:flex md:items-center md:space-x-4 md:flex-row"
+          >
+            <img
+              class="w-20 h-20 rounded-full md:w-20 lg:w-28 lg:h-28 md:h-20 md:rounded-full"
+              src="/StarBucks Clone Img's/Others.jpg"
+              alt=""
+            />
+            <div class="md:font-medium md:text-darkBlack text-2xl">
+              <div>other</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-2 md:w-1/2"
-      >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/VIA.jpg"
-            alt="Rounded avatar"
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>VIA® Instant</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div
-      class="md:flex md:flex-row md:align-center md:p-4 md:ml-16 md:text-2xl md:mt-2"
-    >
-      <h2 class="md:font-bold md:font-700 lg:ml-64">Merchandise</h2>
-    </div>
-    <hr class="cutout-hr" />
-    <section
-      id="merchandise"
-      class="md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-48 lg:gap-x-20"
-    >
-      <hr class="mt-4 bg-black" />
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:ml-4 md:space-y-2"
-      >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/COld Cups.jpg"
-            alt=""
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Cold Cups</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Tumblers.jpg"
-            alt=""
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Mugs</div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="md:flex md:flex-col md:p-10 md:align-center md:space-y-2 md:ml-2 md:w-1/2"
-      >
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Mugs.jpg"
-            alt=""
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>Tumblers</div>
-          </div>
-        </div>
-        <div class="md:flex md:items-center md:space-x-4 md:flex-row">
-          <img
-            class="md:w-14 lg:w-28 lg:h-28 md:h-14 md:rounded-full"
-            src="/StarBucks Clone Img's/Others.jpg"
-            alt=""
-          />
-          <div class="md:font-medium md:text-darkBlack text-2xl">
-            <div>other</div>
-          </div>
-        </div>
-      </div>
+      </section>
     </section>
     <footer
       class="bg-white py-6 my-10 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
@@ -746,9 +798,29 @@
       </div>
     </div>
 
-    <div class="flex mx-6 ml-5">
+    <div class="flex mx-6 ml-5 mb-44">
       <div>© 2023 Starbucks Coffee Company. All rights reserved.</div>
     </div>
+    <section
+      id="fixed"
+      class="fixed bottom-0 w-full mt-10 h-auto flex justify-evenly bg-green-950 p-4 md:p-8"
+    >
+      <div class="flex items-center">
+        <div
+          class="text-base text-white font-semibold pr-2 border-b-2 flex items-center"
+        >
+          For item availability, Choose a store
+          <i class="fas fa-chevron-down ml-2" style="color: #ffffff"></i>
+        </div>
+
+        <div class="pl-20 md:pl-80">
+          <i
+            class="fa-solid fa-bag-shopping fa-2xl float-right"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </section>
 
     <script src="/js.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
