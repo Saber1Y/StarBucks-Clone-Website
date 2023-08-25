@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarBucks Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .shadow-top-bottom {
+        box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2),
+          0px -8px 16px -8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/97d7b43d58.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .CollapsibleContent:not(.hidden) {
+        margin: 35px 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      .CollapsibleContent {
+        max-height: 20rem;
+        overflow: hidden;
+        transition: max-height 3s ease;
+      }
+      .CollapsibleContent.show {
+        max-height: 500px;
+        overflow: auto;
+      }
+      .rotate-up {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
+      .cutout-hr {
+        position: relative;
+        height: 1px;
+        background-color: gray;
+        margin-left: 335px;
+        border: none;
+      }
+
+      .cutout-hr::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        right: 0px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="flex justify-center items-center text-center">
+      <div class="menu-container">
+        <i class="fa-solid fa-mug-saucer fa-xl text-black animate-spin"></i>
+      </div>
+    </div> -->
+
+    <nav
+      class="relative flex items-center justify-between p-4 bg-white shadow-md"
+    >
+      <div class="flex justify-between items-center space-x-6">
+        <a href="#" class="box-border:">
+          <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
+        </a>
+
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a
+              href="#menu"
+              class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen"
+            >
+              MENU
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#Rewards"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >REWARDS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Gift Cards"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >GIFT CARDS</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none ml-auto"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-5 mt-10 w-3 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md transition-transform ease-in-out duration-300 transform translate-x-0 md:translate-x-0"
+          style="height: 100vh"
+        >
+          <a href="/menu.html">Menu</a>
+          <a href="#">Rewards</a>
+          <a href="#">Gift Cards</a>
+          <div class="shadow-md my-3 p-2 flex items-center">
+            <button
+              class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+            >
+              Sign In
+            </button>
+
+            <button
+              class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+            >
+              Join Now
+            </button>
+            <div
+              class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+            >
+              <img
+                src="/StarBucks Clone Img's/marker.svg"
+                width="20"
+                height="20"
+                class="hover:text-lightGreen text-darkBlack"
+                alt="Location Icon"
+              />
+              <a href="#">Find a Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-9 ml-auto">
+        <div
+          class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+        >
+          <img
+            src="/StarBucks Clone Img's/marker.svg"
+            width="20"
+            height="20"
+            class="hover:text-lightGreen text-darkBlack"
+            alt="Location Icon"
+          />
+          <a href="#">Find a Store</a>
+        </div>
+
+        <div class="flex space-x-4">
+          <button
+            class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+          >
+            Sign In
+          </button>
+
+          <button
+            class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+          >
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="md:block bg-green-950 bg-opacity-87">
+      <div class="container flex justify-between">
+        <div
+          class="min-h-full w-full bg-opacity-87 flex text-base font-normal p-4 text-white"
+        >
+          STARBUCKS® REWARDS
+        </div>
+        <div class="p-y-7 p-x-16">
+          <a
+            href="https://starbucks.app.link/VLa2I3inh9"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-4 `text-sm font-medium text-white bg-transp border border-white rounded-full transition duration-300 hover:bg-white hover:text-black whitespace-nowrap py-3"
+          >
+            Join in the app
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="flex flex-col items-center my-8 leading-relaxed">
+        <h1 class="text-xl text-darkBlack font-bold">
+          Getting started is easy
+        </h1>
+        <p class="mt-4 font-sans">
+          Earn Stars get rewarded in a few easy steps
+        </p>
+      </div>
+
+      <section id="avatarImages" class="space-y-6">
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-12 h-12 rounded-full ml-3"
+            src="/StarBucks Clone Img's/getting-started-1@2x.jpg"
+            alt="1"
+          />
+          <div class="dark:darkBlack">
+            <div class="text-base font-bold mt-3">
+              Download the starbucks app
+            </div>
+            <div class="text-sm mt-2">
+              <span class="underline text-green-800">join in the app</span>
+              To get access to the full range of Starbucks® Rewards benefits.
+              you can also
+              <span class="underline text-green-500">join online</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-12 h-12 rounded-full ml-3"
+            src="/StarBucks Clone Img's/getting-started-2@2x.jpg"
+            alt="1"
+          />
+          <div class="dark:darkBlack">
+            <div class="text-base font-bold mt-3">
+              Download the starbucks app
+            </div>
+            <div class="text-sm mt-2">
+              Use cash, credit/debit card ot save some time and pay right
+              through the app. you'll collect stars all ways.<span
+                class="underline text-green-500"
+                >Learn how</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-12 h-12 rounded-full ml-3"
+            src="/StarBucks Clone Img's/getting-started-3@2x.jpg"
+            alt="1"
+          />
+          <div class="dark:darkBlack">
+            <div class="text-base font-bold mt-3">Earn Stars, get Rewards</div>
+            <div class="text-sm mt-2">
+              As you earn Stars, you can redeem them for Rewards—like free food,
+              drinks, and more. Start redeeming with as little as 25 Stars!
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="scroll" class="flex mt-16 bg-green-300">
+      <div id="headings" class="flex flex-col space-x-3 mx-auto">
+        <h1 class="mt-10 text-2xl items-center m-auto font-bold">
+          Get your Favourite for free
+        </h1>
+        <div class="flex flex-row space-x-12 ml-6 my-5">
+          <div class="flex items-center cursor-pointer">
+            <span class="text-lg font-semibold" onclick="showImage('img25')"
+              >25</span
+            >
+            <span aria-hidden="true" class="text-gold" style="color: gold"
+              >★</span
+            >
+          </div>
+
+          <div class="flex items-center">
+            <span class="text-lg font-semibold">100</span>
+            <span aria-hidden="true" class="text-gold" style="color: gold"
+              >★</span
+            >
+          </div>
+          <div class="flex items-center">
+            <span class="text-lg font-semibold">200</span>
+            <span aria-hidden="true" class="text-gold" style="color: gold"
+              >★</span
+            >
+          </div>
+          <div class="flex items-center">
+            <span class="text-lg font-semibold">300</span>
+            <span aria-hidden="true" class="text-gold" style="color: gold"
+              >★</span
+            >
+          </div>
+          <div class="flex items-center">
+            <span class="text-lg font-semibold">400</span>
+            <span aria-hidden="true" class="text-gold" style="color: gold"
+              >★</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="image-result" class="bg-green-500 p-2 object-cover">
+      <div class="bg-green-500 p-2 object-cover flex flex-col" id="img25">
+        <img
+          src="/StarBucks Clone Img's/latte.jpg"
+          class="block w-full h-auto"
+          alt=""
+        />
+
+        <div class="mt-4">
+          <h2 class="text-center text-xl font-semibold">
+            Customize your drink
+          </h2>
+          <p class="text-center text-base mt-2 font-normal">
+            Make your drink just right with an extra espresso shot, nondairy
+            milk, or a dash of your favorite syrup.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="/js.js"></script>
+  </body>
+</html>
