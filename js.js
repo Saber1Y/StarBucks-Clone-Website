@@ -48,15 +48,15 @@ function showImage(imageId) {
   });
 }
 
-// window.addEventListener('scroll', function() {
-//   const stickySection = document.getElementById('sticky-section');
-//   const scrollPosition = window.scrollY;
+window.addEventListener('scroll', function() {
+  const stickySection = document.getElementById('sticky-section');
+  const scrollPosition = window.scrollY;
 
-//   if (scrollPosition >= 20) {
-//     stickySection.classList.add('fixed', 'top-0');
-//     stickySection.style.width = `${stickySection.offsetWidth}px`;
-//   } else {
-//     stickySection.classList.remove('fixed', 'top-0');
-//     stickySection.style.width = 'auto';
-//   }
-// });
+  if (scrollPosition >= 20) {
+    stickySection.classList.add('fixed', 'top-0', 'w-full');
+    stickySection.style.width = '';
+  } else {
+    stickySection.classList.remove('fixed', 'top-0');
+    stickySection.style.width = 'auto';
+  }
+});

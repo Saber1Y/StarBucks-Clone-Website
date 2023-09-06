@@ -72,12 +72,6 @@
     </style>
   </head>
   <body>
-    <!-- <div class="flex justify-center items-center text-center">
-      <div class="menu-container">
-        <i class="fa-solid fa-mug-saucer fa-xl text-black animate-spin"></i>
-      </div>
-    </div> -->
-
     <nav
       class="relative flex items-center justify-between p-4 bg-white shadow-md"
     >
@@ -128,7 +122,7 @@
         >
           <a href="/menu.html">Menu</a>
           <a href="#">Rewards</a>
-          <a href="#">Gift Cards</a>
+          <a href="/GiftCards.html">Gift Cards</a>
           <div class="shadow-md my-3 p-2 flex items-center">
             <button
               class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
@@ -186,7 +180,10 @@
         </div>
       </div>
     </nav>
-    <section class="md:block bg-green-950 bg-opacity-87" id="sticky-section">
+    <section
+      class="md:block bg-green-950 bg-opacity-87 w-full"
+      id="sticky-section"
+    >
       <div class="container flex justify-between">
         <div
           class="min-h-full w-full bg-opacity-87 flex text-base font-normal p-4 text-white"
@@ -344,13 +341,21 @@
       class="p-2 object-cover"
       style="background-color: #d4e9e2"
     >
-      <div class="p-2 object-cover md:flex md:justify-between" id="img25">
-        <img
-          src="/StarBucks Clone Img's/latte.jpg"
-          class="w-full h-auto md:w-1/3 md:h-auto"
-        />
+      <div
+        class="p-2 object-cover flex flex-col md:flex-row md:items-center"
+        id="img25"
+      >
+        <div class="md:w-1/3 md:h-auto">
+          <img
+            src="/StarBucks Clone Img's/latte.jpg"
+            class="w-full h-auto"
+            alt="Your Image Alt Text"
+          />
+        </div>
 
-        <div class="mt-4 md:w-2/3 md:ml-4">
+        <div
+          class="mt-4 md:w-2/3 md:ml-4 md:flex md:flex-col md:justify-center"
+        >
           <h2 class="text-center text-xl font-semibold">
             Customize your drink
           </h2>
@@ -361,7 +366,10 @@
         </div>
       </div>
 
-      <div class="bg-green-500 p-2 object-cover flex flex-col" id="img100">
+      <div
+        class="bg-green-500 p-2 object-cover flex flex-col md:flex-row"
+        id="img100"
+      >
         <img
           src="/StarBucks Clone Img's/crossaint, coke.jpg"
           class="block w-full h-auto"
@@ -508,17 +516,23 @@
         Cash or card, you earn Stars
       </h1>
       <p
-        class="text-sm m-auto text-center font-normal text-black mt-5 break-words md:text-2xl"
+        class="text-sm m-auto text-center font-normal text-black mt-5 break-words md:text-1xl"
       >
         No matter how you pay, you can earn Stars with your morning coffee.
-        Those Stars add up to (really delicious) Rewards.
+        Those Stars add up to<br />
+        (really delicious) Rewards.
       </p>
 
-      <div id="firstDollar" class="mx-auto">
+      <div
+        id="firstDollar"
+        class="mx-auto lg:flex lg:items-center lg:p-1 lg:ml-10"
+      >
         <h5
           class="ml-2 p-2 my-6 text-darkBlack font-bold text-xl md:p-4 md:text-3xl"
         >
-          1<span aria-hidden="true" class="text-gold text-base">★</span>
+          1<span aria-hidden="true" class="text-gold text-base md:mb-20"
+            >★</span
+          >
           Per dollar
           <p class="ml-2 p-2 text-base font-light">Pay as you go</p>
         </h5>
@@ -530,7 +544,7 @@
                 class="max-w-46 max-h-52 md:w-32"
               />
             </div>
-            <div class="flex-1 md:mt-14">
+            <div class="flex-1 md:mt-14 lg:flex lg:flex-col lg:gap-y-3 lg:mt-4">
               <h3 class="text-base font-bold md:text-lg">
                 Scan and pay separately
               </h3>
@@ -563,7 +577,10 @@
       </div>
       <hr class="cutout-hr mt-5 ml-4" />
 
-      <div id="SecondDollar" class="mx-auto">
+      <div
+        id="SecondDollar"
+        class="mx-auto lg:flex lg:ml-10 lg:items-center lg:p-6"
+      >
         <h5 class="ml-2 p-2 text-darkBlack font-bold text-xl mt-4 md:text-3xl">
           2<span aria-hidden="true" class="text-gold text-base">★</span>
           Per dollar
@@ -577,14 +594,15 @@
                 class="w-46 h-52 md:w-28"
               />
             </div>
-            <div class="flex-1">
-              <h3 class="text-base font-bold">Preload</h3>
+            <div class="flex-1 lg:mt-5">
+              <h3 class="text-base font-bold lg:text-2xl">Preload</h3>
               <p class="my-3 tex-sm">
                 To save time and earn Stars<br />
                 twice as fast, add money to<br />
                 your digital Starbucks Card<br />
-                using any payment option. Scan and pay in one step or order
-                ahead in the app.
+                using any payment option. Scan<br />and pay in one step or order
+                ahead<br />
+                in the app.
               </p>
             </div>
           </div>
@@ -592,11 +610,14 @@
             <div class="flex items-center mb-11">
               <img src="/StarBucks Clone Img's/2B.png" class="w-46 h-52" />
             </div>
-            <div class="flex-1">
-              <h3 class="text-base font-bold">Register your gift card</h3>
-              <p class="my-3 tex-sm">
+            <div class="flex-1 lg:mt-1">
+              <h3 class="text-base font-bold lg:text-2xl">
+                Register your gift card
+              </h3>
+              <p class="my-3 tex-sm lg:mt-4">
                 Then use it to pay through the app. You can even<br />
-                consolidate balances from multiple cards in one place.
+                consolidate balances<br />
+                from multiple cards in one place.
               </p>
             </div>
           </div>
@@ -675,9 +696,9 @@
       </div>
     </section>
 
-    <section id="Questions" class="md:my-20">
+    <section id="Questions" class="md:my-20 md:flex md:flex-col">
       <h2
-        class="ml-3 font-bold text-2xl mt-11 md:mx-auto md:text-center md:flex md:pl-32 md:text-3xl md:ml-36"
+        class="ml-3 font-bold text-2xl mt-11 lg:ml-80 md:text-center md:flex md:text-3xl md:pl-20 md:mx-auto"
       >
         Questions?
       </h2>
