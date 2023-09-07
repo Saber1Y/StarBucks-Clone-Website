@@ -28,7 +28,7 @@ module.exports = {
         lightYellow: 'hsla(68, 100%, 75%, 1)',
         lightSupgrey: 'hsla(0, 0%, 0%, 0.58)',
         whiteGray: 'rgb(249,249,249)',
-        SupGreen: 'rgb(30,57,50)',
+        SupGreen: 'hsl(164,31%,17%)',
         veryLightGreen: '#d4e9e2',
         gold: 'hsla(50, 100%, 50%, 1);',
         cream: 'rgb(242,240,235)',
