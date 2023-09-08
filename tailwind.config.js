@@ -13,6 +13,12 @@ module.exports = {
       xxl: "1536px",
      },
     extend: {
+      fontFamily: {
+        sodo: ['SoDoSans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+      maxWidth: {
+        'custom': 'calc(1em * (calc(600 / 13)))',
+      },
       fontSize: {
         '28': '28px', 
         '24': '24px',
