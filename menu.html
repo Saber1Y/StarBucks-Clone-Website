@@ -197,9 +197,13 @@
             <div
               class="min-h-full w-full bg-opacity-87 flex items-center text-base font-normal space-x-4 p-4 pl-20 relative"
             >
-              <a href="/AllProducts.html">All products</a>
-              <a href="#">Featured</a>
-              <a href="#">Previous Orders</a>
+              <a
+                href="#"
+                class="border-b border-black {{ Request::is('menu.html') ? 'border-green-500' : '' }}"
+                >All products</a
+              >
+              <a href="/Featured.html">Featured</a>
+              <a href="/Previous Orders.html">Previous Orders</a>
               <a href="#">Favourite Products</a>
             </div>
           </div>

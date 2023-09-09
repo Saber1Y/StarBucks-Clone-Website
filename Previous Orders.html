@@ -7,14 +7,18 @@
     <title>StarBucks Clone</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="path/to/splide.min.css" />
     <style>
       .shadow-top-bottom {
         box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2),
@@ -47,9 +51,27 @@
       .no-scroll {
         overflow: hidden;
       }
+      .cutout-hr {
+        position: relative;
+        height: 1px;
+        background-color: gray;
+        margin-left: 335px;
+        border: none;
+      }
+
+      .cutout-hr::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        right: 0px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: white;
+      }
     </style>
   </head>
-  <body class="overflow-y-auto">
+  <body>
     <nav
       class="relative flex items-center justify-between p-4 bg-white shadow-md"
     >
@@ -61,8 +83,8 @@
         <ul class="hidden md:flex space-x-6">
           <li>
             <a
-              href="/menu.html"
-              class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen hover:underline underline-offset-4"
+              href="#menu"
+              class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen"
             >
               MENU
             </a>
@@ -70,14 +92,14 @@
 
           <li>
             <a
-              href="/Rewards.html"
+              href="Rewards.html"
               class="text-black uppercase font-bold hover:text-lightGreen"
               >REWARDS</a
             >
           </li>
           <li>
             <a
-              href="/GiftCards.html"
+              href="GiftCards.html"
               class="text-black uppercase font-bold hover:text-lightGreen"
               >GIFT CARDS</a
             >
@@ -99,8 +121,8 @@
           style="height: 100vh"
         >
           <a href="/menu.html">Menu</a>
-          <a href="#">Rewards</a>
-          <a href="#">Gift Cards</a>
+          <a href="/Rewards.html">Rewards</a>
+          <a href="/GiftCards.html">Gift Cards</a>
           <div class="shadow-md my-3 p-2 flex items-center">
             <button
               class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
@@ -159,195 +181,53 @@
       </div>
     </nav>
 
-    <h1
-      class="block m-0 text-center font-bold font-sodo items-center my-5 text-SupGreen tracking-tight lg:text-5xl"
-      style="color: #1e3932"
-    >
-      Time for feel-good fall
-    </h1>
-    <main class="md:flex md:grid-cols-2 gap-8">
-      <section
-        class="grid grid-cols-1 md:col-span-6 my-10 md:mr-4"
-        style="background-color: #d69a2d"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/pumpkin Spice.webp" alt="" />
-        </div>
-        <div
-          id="text"
-          class="bg-lightYellow md:flex flex-col md:items-center text-center my-8"
-        >
-          <h2 class="text-lg font-bold m-0 md:text-2xl" style="color: #1e3932">
-            Pumpkin Spice Latte
-          </h2>
-          <p
-            class="max-w-[calc(600/13)em] text-base block my-5 whitespace-normal md:whitespace-nowrap lg:whitespace-normal"
+    <section class="hidden md:block bg-gray-300 bg-opacity-87">
+      <div id="bottom-nav">
+        <div class="container md:flex md:space-y-4">
+          <div
+            class="min-h-full w-full bg-opacity-87 flex items-center text-base font-normal space-x-4 p-4 pl-20 relative"
           >
-            Espresso and steamed milk with pumpkin, cinnamon and<br />
-            nutmeg flavors, topped with whipped cream.
-          </p>
-          <a
-            href="#"
-            class="text-base rounded-full border py-2 px-4 font-bold text-lightGreen"
-            >Order Now</a
-          >
+            <a href="#">All products</a>
+            <a href="/Featured.html">Featured</a>
+            <a
+              href="/Previous Orders.html"
+              class="border-b border-black {{ Request::is('menu.html') ? 'border-green-500' : '' }}"
+              >Previous Orders</a
+            >
+            <a href="#">Favourite Products</a>
+          </div>
         </div>
-      </section>
-      <section
-        class="grid grid-cols-1 my-10 mt-11 md:ml-4"
-        style="background-color: #d69a2d"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/pumpkin cream.webp" alt="" />
-        </div>
-        <div id="text" class="bg-lightYellow flex-col text-center my-8">
-          <h2 class="text-lg font-bold m-0 md:text-2xl" style="color: #1e3932">
-            Pumpkin Cream Cold Brew
-          </h2>
-          <p
-            class="max-w-[calc(600/13)em] text-base block my-5 whitespace-normal md:whitespace-nowrap lg:whitespace-normal"
-          >
-            Cold brew sweetened with vanilla-flavored syrup, finished with
-            pumpkin cream cold foam and a dusting of pumpkin-spice topping.
-          </p>
-          <a
-            href="#"
-            class="text-base rounded-full border py-2 px-4 font-bold text-lightGreen"
-          >
-            Order Now
-          </a>
-        </div>
-      </section>
-    </main>
-    <main class="md:flex md:grid-cols-2 gap-8">
-      <section
-        class="grid grid-cols-1 my-10 mt-11 md:mr-4"
-        style="background-color: #d5a286"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/New Iced.webp" alt="" />
-        </div>
-        <div
-          id="text"
-          class="bg-lightYellow flex-col text-center my-8 text-black"
-        >
-          <h2 class="text-lg font-bold m-0 md:text-2xl">
-            New Iced Apple Crisp Oatmilk Shaken Espresso
-          </h2>
-          <p
-            class="max-w-[calc(600/13)em] text-base block my-5 whitespace-normal md:whitespace-nowrap lg:whitespace-normal"
-          >
-            Layers of Starbucks® Blonde Espresso, spiced apple flavors and
-            creamy oatmilk.
-          </p>
-          <a href="#" class="text-base rounded-full border py-2 px-4 font-bold">
-            Order Now
-          </a>
-        </div>
-      </section>
-
-      <section
-        class="grid grid-cols-1 my-10 mt-11 md:ml-4"
-        style="background-color: #d5a286"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/newviced pumpkin.webp" alt="" />
-        </div>
-        <div id="text" class="bg-lightYellow flex-col text-center my-8">
-          <h2 class="text-lg font-bold m-0 md:text-2xl">
-            New Iced Pumpkin Cream Chai Tea Latte
-          </h2>
-          <p
-            class="max-w-[calc(600/13)em] text-base block my-5 whitespace-normal md:whitespace-nowrap lg:whitespace-normal"
-          >
-            A blend of black tea infused with warming spices and milk, topped
-            with pumpkin cream cold foam.
-          </p>
-          <a href="#" class="text-base rounded-full border py-2 px-4 font-bold">
-            Order Now
-          </a>
-        </div>
-      </section>
-    </main>
-    <main class="md:flex md:grid-cols-2 gap-8">
-      <section
-        class="grid grid-cols-1 my-10 mt-11 md:mr-4"
-        style="background-color: #b04a5a"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/Pumpkin Cream Cheese.jpg" alt="" />
-        </div>
-        <div
-          id="text"
-          class="bg-lightYellow flex-col text-center my-8 text-white"
-        >
-          <h2 class="text-lg font-bold m-0 md:text-2xl md:text-white">
-            Pumpkin Cream Cheese Muffin
-          </h2>
-          <p
-            class="max-w-[calc(600/13)em] text-base block my-5 whitespace-normal md:whitespace-nowrap lg:whitespace-normal"
-          >
-            A spiced pumpkin muffin with sweet cream-cheese filling and a pepita
-            sprinkling.
-          </p>
-          <a href="#" class="text-base rounded-full border py-2 px-4 font-bold">
-            Order Now
-          </a>
-        </div>
-      </section>
-      <section
-        class="grid grid-cols-1 my-10 mt-11 md:ml-4"
-        style="background-color: #b04a5a"
-      >
-        <div>
-          <img src="/StarBucks Clone Img's/New Baked Apple.jpg" alt="" />
-        </div>
-        <div
-          id="text"
-          class="bg-lightYellow flex-col text-center my-8 text-white"
-        >
-          <h2 class="text-lg font-bold m-0 md:text-2xl">
-            New Baked Apple Croissant
-          </h2>
-          <p class="max-w-[calc(600/13)em] text-base block my-5">
-            Our flaky croissant wrapped around warm apple filling and baked to a
-            golden-brown finish.
-          </p>
-          <a href="#" class="text-base rounded-full border py-2 px-4 font-bold">
-            Order Now
-          </a>
-        </div>
-      </section>
-    </main>
-    <section
-      class="grid grid-cols-1 md:grid-cols-2 my-10 mt-11 text-white"
-      style="background-color: #1e3932"
-    >
-      <div>
-        <img src="/StarBucks Clone Img's/Casicie.jpg" alt="" />
-      </div>
-      <div
-        id="text"
-        class="bg-lightYellow text-center my-8 text-white flex flex-col justify-center items-center h-screen md:h-auto"
-      >
-        <h2
-          class="text-xl font-sodo font-bold m-0 md:max-w-custom md:items-center md:text-2xl md:font-semibold"
-        >
-          Guatemala Casi Cielo®
-        </h2>
-        <p
-          class="max-w-[calc(1em*(600/13))]text-base font-sodosans font-helvetica font-sans font-normal md:text-2xl leading-36 my-5"
-        >
-          Notes of bright Meyer lemon and cocoa nibs shine in this medium roast
-          coffee.
-        </p>
-        <a href="#" class="text-base rounded-full border py-1 px-4 text-white">
-          Order Now
-        </a>
       </div>
     </section>
+    <div class="grid grid-cols-1 space-y-6">
+      <h1 class="my-3 px-3 font-bold text-2xl items-center text-center">
+        Previous Orders
+      </h1>
+      <img
+        src="/StarBucks Clone Img's/moon.webp"
+        alt="Moon GIF"
+        class="items-center text-center mx-auto"
+      />
+    </div>
+    <p class="font-semibold text-2xl m-4">When history repeats itself</p>
+    <div class="text-base m-4 font-normal" style="color: rgba(0, 0, 0, 0.87)">
+      Previous orders will appear here to quickly order again.
+    </div>
+    <div class="m-4 my-3 space-x-3">
+      <button
+        class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+      >
+        Sign In
+      </button>
+
+      <button
+        class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+      >
+        Join Now
+      </button>
+    </div>
     <footer
-      class="bg-white py-6 my-10 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
+      class="bg-white py-6 my-10 mt-56 m-0 shadow-top-bottom md:flex flex-col md:py-6 md:my-10 lg:space-x-5"
     >
       <div class="container ml-5 my-5">
         <div
@@ -578,5 +458,25 @@
       © 2023 Starbucks Coffee Company. All rights reserved.
     </div>
     <script src="js.js"></script>
+    <section
+      id="fixed"
+      class="fixed bottom-0 w-full mt-10 h-auto flex justify-evenly bg-green-950 p-4 md:p-8"
+    >
+      <div class="flex items-center">
+        <div
+          class="text-base text-white font-semibold pr-2 border-b-2 flex items-center"
+        >
+          For item availability, Choose a store
+          <i class="fas fa-chevron-down ml-2" style="color: #ffffff"></i>
+        </div>
+
+        <div class="pl-20 md:pl-80">
+          <i
+            class="fa-solid fa-bag-shopping fa-2xl float-right"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
