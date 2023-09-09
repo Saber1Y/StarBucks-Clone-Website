@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarBucks Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .shadow-top-bottom {
+        box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2),
+          0px -8px 16px -8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/97d7b43d58.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .CollapsibleContent:not(.hidden) {
+        margin: 35px 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      .CollapsibleContent {
+        max-height: 20rem;
+        overflow: hidden;
+        transition: max-height 3s ease;
+      }
+      .CollapsibleContent.show {
+        max-height: 500px;
+        overflow: auto;
+      }
+      .rotate-up {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
+      .cutout-hr {
+        position: relative;
+        height: 1px;
+        background-color: gray;
+        margin-left: 335px;
+        border: none;
+      }
+
+      .cutout-hr::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        right: 0px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="relative flex items-center justify-between p-4 bg-white shadow-md"
+    >
+      <div class="flex justify-between items-center space-x-6">
+        <a href="#" class="box-border:">
+          <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
+        </a>
+
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a
+              href="#menu"
+              class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen"
+            >
+              MENU
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="Rewards.html"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >REWARDS</a
+            >
+          </li>
+          <li>
+            <a
+              href="GiftCards.html"
+              class="text-black uppercase font-bold hover:text-lightGreen"
+              >GIFT CARDS</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none ml-auto"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-5 mt-10 w-3 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md transition-transform ease-in-out duration-300 transform translate-x-0 md:translate-x-0"
+          style="height: 100vh"
+        >
+          <a href="/menu.html">Menu</a>
+          <a href="/Rewards.html">Rewards</a>
+          <a href="/GiftCards.html">Gift Cards</a>
+          <div class="shadow-md my-3 p-2 flex items-center">
+            <button
+              class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+            >
+              Sign In
+            </button>
+
+            <button
+              class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+            >
+              Join Now
+            </button>
+            <div
+              class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+            >
+              <img
+                src="/StarBucks Clone Img's/marker.svg"
+                width="20"
+                height="20"
+                class="hover:text-lightGreen text-darkBlack"
+                alt="Location Icon"
+              />
+              <a href="#">Find a Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-9 ml-auto">
+        <div
+          class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
+        >
+          <img
+            src="/StarBucks Clone Img's/marker.svg"
+            width="20"
+            height="20"
+            class="hover:text-lightGreen text-darkBlack"
+            alt="Location Icon"
+          />
+          <a href="#">Find a Store</a>
+        </div>
+
+        <div class="flex space-x-4">
+          <button
+            class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+          >
+            Sign In
+          </button>
+
+          <button
+            class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+          >
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hidden md:block bg-gray-300 bg-opacity-87">
+      <div id="bottom-nav">
+        <div class="container md:flex md:space-y-4">
+          <div
+            class="min-h-full w-full bg-opacity-87 flex items-center text-base font-normal space-x-4 p-4 pl-20 relative"
+          >
+            <a href="#">All products</a>
+            <a href="/Featured.html">Featured</a>
+            <a href="/Previous Orders.html">Previous Orders</a>
+            <a
+              href="#"
+              class="border-b border-black {{ Request::is('menu.html') ? 'border-green-500' : '' }}"
+              >Favourite Products</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="p-11 lg:mt-0">
+      <div class="grid grid-cols-1 space-y-6 m-4 my-3">
+        <h1 class="my-3 px-3 font-bold text-2xl">Favourite Products</h1>
+        <img
+          src="/StarBucks Clone Img's/cards.webp"
+          alt="Moon GIF"
+          class="m-4 my-3"
+        />
+      </div>
+      <p class="font-semibold text-2xl m-4">Save your Favourite mixes</p>
+      <div class="text-base m-4 font-normal" style="color: rgba(0, 0, 0, 0.87)">
+        Use the heart to save customizations.Your Favourites will appear here to
+        order again.
+      </div>
+      <div class="m-4 my-3 space-x-3">
+        <button
+          class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+        >
+          Sign In
+        </button>
+
+        <button
+          class="bg-black text-white hover:bg-lightGray rounded-full px-3 py-2"
+        >
+          Join Now
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
