@@ -21,17 +21,6 @@ Arrows.forEach((arrow, index) => {
   });
 });
 
-
-//loading aspect
-// const loaded = document.getElementById('whole-page');
-
-// setTimeout(function() {
-//     function itemDisplay() {
-//         loaded.innerHTML = "loaded";
-//     }
-//     itemDisplay();
-// }, 1000);
-
 document.addEventListener('DOMContentLoaded', function() {
   showImage('img25');
 });

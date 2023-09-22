@@ -14,7 +14,7 @@ module.exports = {
      },
     extend: {
       fontFamily: {
-        sodo: ['SoDoSans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        sodo: ('SoDoSans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'),
       },
       maxWidth: {
         'custom': 'calc(1em * (calc(600 / 13)))',
