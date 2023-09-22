@@ -94,15 +94,22 @@
       <div class="md:hidden">
         <div
           id="menu"
-          class="absolute flex-col items-center hidden self-end py-5 mt-10 w-3 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md transition-transform ease-in-out duration-300 transform translate-x-0 md:translate-x-0"
+          class="absolute flex-col w-full font-sodo hidden py-4 mt-10 space-y-6 font-bold bg-white left-6 right-0 top-10 drop-shadow-md"
           style="height: 100vh"
         >
-          <a href="/menu.html">Menu</a>
-          <a href="/Rewards.html">Rewards</a>
-          <a href="/GiftCards.html">Gift Cards</a>
-          <div class="shadow-md my-3 p-2 flex items-center">
+          <div class="flex justify-between items-center w-full">
+            <a href="/menu.html" class="p-4 py-2 text-xl">Menu</a>
+            <i
+              class="fa-solid fa-greater-than fa-5xs ml-10"
+              style="color: #000000"
+            ></i>
+          </div>
+          <a href="/Rewards.html" class="p-4 py-2 text-xl">Rewards</a>
+          <a href="/GiftCards.html" class="p-4 py-2 text-xl">Gift Cards</a>
+          <hr class="md:cutout-hr" />
+          <div class="my-3 p-2 flex space-x-2 items-center">
             <button
-              class="border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
+              class="ml-24 border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
             >
               Sign In
             </button>
@@ -112,18 +119,20 @@
             >
               Join Now
             </button>
-            <div
-              class="text-darkBlack hover:text-lightGreen flex items-center space-x-2"
-            >
-              <img
-                src="/StarBucks Clone Img's/marker.svg"
-                width="20"
-                height="20"
-                class="hover:text-lightGreen text-darkBlack"
-                alt="Location Icon"
-              />
+          </div>
+          <div
+            class="text-darkBlack hover:text-lightGreen flex items-center space-x-2 p-2"
+          >
+            <img
+              src="/StarBucks Clone Img's/marker.svg"
+              width="20"
+              height="20"
+              class="hover:text-lightGreen text-darkBlack"
+              alt="Location Icon"
+            />
+            <p class="md:hidden">
               <a href="#">Find a Store</a>
-            </div>
+            </p>
           </div>
         </div>
       </div>
