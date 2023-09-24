@@ -79,13 +79,12 @@
         <a href="#" class="box-border:">
           <img src="/images/logo.png" alt="StarBucks Logo" class="w-12 h-12" />
         </a>
-
         <ul class="hidden md:flex space-x-6">
           <li>
             <a
               href="#menu"
               class="md:text-black md:uppercase md:font-bold md:relative
-              {{ Request::is('menu.html') ? 'border-b-4'}}"
+              {{ Request::is('menu.html') ? 'border-b-4 border-green-950' : '' }}"
             >
               MENU
             </a>
@@ -262,7 +261,7 @@
       <hr class="md:cutout-hr" />
       <section
         id="drinks"
-        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
+        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20"
       >
         <div
           class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
@@ -385,7 +384,7 @@
       </div>
       <section
         id="drinks"
-        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
+        class="space-y-4 my-8 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20"
       >
         <div
           class="space-y-4 md:flex md:flex-col md:p-10 md:align-center md:space-y-3 md:ml-4 lg:space-y-4"
@@ -470,7 +469,7 @@
       <hr class="md:cutout-hr" />
       <section
         id="coffee"
-        class="space-y-4 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20 lg:ml-0"
+        class="space-y-4 mx-4 md:flex md:gap-5 md:flex-row md:align-center md:p-4 md:mb-2 md:ml-0 lg:ml-64 lg:gap-x-20"
       >
         <div class="md:flex md:flex-col md:p-10 md:align-center md:ml-4">
           <div

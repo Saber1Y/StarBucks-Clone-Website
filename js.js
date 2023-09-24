@@ -49,3 +49,23 @@ window.addEventListener('scroll', function() {
     stickySection.style.width = 'auto';
   }
 });
+
+
+let currentIndex = 0;
+const numSlides = document.querySelectorAll('.carousel-item').length;
+const slider = document.querySelector('.carousel-slider');
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + numSlides) % numSlides;
+  updateCarousel();
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % numSlides;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const translateX = -currentIndex * 100 + '%';
+  slider.style.transform = `translateX(${translateX})`;
+}

@@ -83,7 +83,7 @@
         <ul class="hidden md:flex space-x-6">
           <li>
             <a
-              href="#menu"
+              href="/menu.html"
               class="md:text-black md:uppercase md:font-bold md:hover:text-lightGreen md:relative md:border-b-3 md:border-solid md:border-lightGreen"
             >
               MENU
@@ -92,14 +92,15 @@
 
           <li>
             <a
-              href="#Rewards"
-              class="text-black uppercase font-bold hover:text-lightGreen"
+              href="/Rewards.html"
+              class="text-black uppercase font-bold hover:text-lightGreen
+              {{ Request::is('Rewards.html') ? 'border-b-4 border-green-950' : '' }}"
               >REWARDS</a
             >
           </li>
           <li>
             <a
-              href="#Gift Cards"
+              href="/Rewards.htmls"
               class="text-black uppercase font-bold hover:text-lightGreen"
               >GIFT CARDS</a
             >
@@ -134,7 +135,6 @@
             <button
               class="ml-24 border border-black text-darkBlack bg-opacity-20 rounded-full hover:bg-lightGray px-3 py-2"
             >
-            
               Sign In
             </button>
 
