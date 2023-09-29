@@ -4,7 +4,7 @@
   "description": "",
   "main": "js.js",
   "scripts": {
-    "build": "C:\\Users\\PC\\Codes\\StarBucks Clone App\\node_modules\\.bin\\tailwindcss -i ./input.css -o ./style.css",
+    "build": "tailwindcss -i ./input.css -o ./style.css",
     "watch": "tailwindcss -i ./input.css -o ./style.css --watch"
   },
   
