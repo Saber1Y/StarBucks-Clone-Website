@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./style.css",
     "watch": "tailwindcss -i ./input.css -o ./style.css --watch",
-    "css": ""
+    "mycss": ""
   },
   
   "keywords": [],
