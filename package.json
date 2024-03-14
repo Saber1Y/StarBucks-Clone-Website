@@ -8,11 +8,14 @@
     "watch": "tailwindcss -i ./input.css -o ./style.css --watch",
     "mycss": ""
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "framer": "^2.4.1",
+    "motion": "^10.16.4"
   }
 }
